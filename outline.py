@@ -23,7 +23,7 @@ for image in images:
                     bounds_ind = ind
                     while bounds_ind > 7:
                         if line[bounds_ind-7:bounds_ind] == "bounds=":
-                            points = line[bounds_ind:bounds_ind+26].split('[')
+                            points = line[bounds_ind:bounds_ind+30].split('[')
                             cornerA = __get_corner(points[1])
                             cornerB = __get_corner(points[2])
                             cv2.rectangle(img,(cornerA[0],cornerA[1]),(cornerB[0],cornerB[1]),color=(0, 255, 255), thickness=5)
