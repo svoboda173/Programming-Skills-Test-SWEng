@@ -2,6 +2,7 @@
 
 ## Running the program:
 Make sure you have the necessary libraries installed--namely, opencv. Run from the command line:
+
     pip install opencv-python
 
 Then, use a python interpreter to run outline.py, passing the folder which contains the png/xml file pairs as a second command line argument.
